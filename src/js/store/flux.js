@@ -7,7 +7,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		actions: {
 			// Use getActions to call a function within a fuction
 			fetchStarWars:async (element)=>{
-				let baseUrl="https://www.swapi.tech/api/" + element
+				let baseUrl=`https://www.swapi.tech/api/` + element
 				try {
 					let response = await fetch(baseUrl)
 					if(!response.ok) return response.status
